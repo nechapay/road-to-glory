@@ -61,7 +61,7 @@
                   :disabled="item.disabled"
                   v-for="item in questions"
                   v-html="item.text()"
-                  :key="item.id" @click="handleStarClick(item.id)"></button>
+                  :key="item.id" @click="handleStarClick(item.short)"></button>
         </div>
       </transition>
       <transition name="fade">
@@ -71,9 +71,12 @@
               <div class="front card-content">
                 <div class="question__text" v-html="questions[index].task.text"></div>
                 <div class="answers-container">
-                  <a class="button" :class="answer.style" v-for="answer in questions[index].task.answers"
-                     @click="handleAnswerClick(answer.correct)">{{ answer.text }}</a>
+                  <div class="answer-button-container" v-for="answer in questions[index].task.answers">
+                    <a class="button answer-button" :class="answer.style"
+                       @click="handleAnswerClick(answer.correct, answer.id)">{{ answer.text }}</a>
+                  </div>
                 </div>
+                <a class="button" v-if="isCommentVisible" @click="showComment">Комментарий</a>
               </div>
               <div class="back card-content">
                 <div v-html="getComment()"></div>
