@@ -146,7 +146,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  background: url("../img/bg-left.png") no-repeat center center;
+  background: url("../img/bg-left.jpg") no-repeat center center;
   background-size: contain;
 }
 
@@ -167,7 +167,7 @@ img {
   height: 100%;
   top: 0;
   right: 0;
-  background: url("../img/bg-right.png") no-repeat center center;
+  background: url("../img/bg-right.jpg") no-repeat center center;
   background-size: contain;
 }
 
@@ -193,28 +193,28 @@ img {
 .level-select__side--top-left {
   top: 0;
   left: 0;
-  background: url("../img/bg-top-left.png") no-repeat center center;
+  background: url("../img/bg-top-left.jpg") no-repeat center center;
   background-size: contain;
 }
 
 .level-select__side--top-right {
   top: 0;
   right: 0;
-  background: url("../img/bg-top-right.png") no-repeat center center;
+  background: url("../img/bg-top-right.jpg") no-repeat center center;
   background-size: contain;
 }
 
 .level-select__side--bottom-left {
   bottom: 0;
   left: 0;
-  background: url("../img/bg-bottom-left.png") no-repeat center center;
+  background: url("../img/bg-bottom-left.jpg") no-repeat center center;
   background-size: contain;
 }
 
 .level-select__side--bottom-right {
   bottom: 0;
   right: 0;
-  background: url("../img/bg-bottom-right.png") no-repeat center center;
+  background: url("../img/bg-bottom-right.jpg") no-repeat center center;
   background-size: contain;
 }
 
@@ -401,7 +401,7 @@ img {
 .answers-container {
   display: grid;
   grid-template-columns: 49% 49%;
-  grid-template-rows: 49% 49%;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: .5%;
 }
 
