@@ -26,32 +26,40 @@
 
 <body>
   <div id="app" class="content-container fill">
-    <div class="start-page fill" :class="classes.startPage">
-      <div class="start-page__left-side" :class="classes.left"></div>
-      <div class="start-page__right-side" :class="classes.right"></div>
-      <div class="start-page__controls" :class="classes.startControls">
-        <label class="username__label" for="username">Приветсвтую! Назови себя!</label>
-        <input id="username" class="input username" type="text" v-model="username">
-        <a class="button start-button" @click="startClick">начать</a>
-      </div>
-
+    <div class="start-page" :class="classes.startPage">
+      <!--      <div class="start-page__side start-page__side&#45;&#45;left" :class="classes.left"></div>-->
+      <!--      <div class="start-page__side start-page__side&#45;&#45;right" :class="classes.right"></div>-->
+      <transition name="fade">
+        <div class="start-page__controls" :class="classes.startControls" v-if="isUsernameControlsVisible">
+          <label class="username__label" for="username">Приветсвтую! Назови себя!</label>
+          <input id="username" class="input username" type="text" v-model="username" @keypress="handleStartKeyPressed">
+          <a class="button start-button" @click="startClick"  >начать</a>
+        </div>
+      </transition>
+      <transition name="fade">
+        <div class="level-select-container fill" :class="classes.levelControls"
+             v-if="isLevelSelectControlsVisible">
+          <div class="level-select">
+            <div class="level-select__caption">{{ username }}, выбери свой путь!</div>
+            <div class="level-select__buttons-container">
+              <a class="button level-select__button" v-for="item in types" @click="handleClickLevelSelect(item)"
+                 :key="item.id">{{ item.name }}</a>
+            </div>
+          </div>
+        </div>
+      </transition>
     </div>
-    <div class="level-select-container fill" :class="classes.levelSelect">
-      <div class="level-select__side level-select__side--top-left" :class="classes.top"></div>
-      <div class="level-select__side level-select__side--top-right" :class="classes.top"></div>
-      <div class="level-select__side level-select__side--bottom-left" :class="classes.bottom"></div>
-      <div class="level-select__side level-select__side--bottom-right" :class="classes.bottom"></div>
-      <div class="level-select__side level-select__buttons-container" :class="classes.levelControls">
-        <a class="button level-select__button" v-for="item in types" @click="handleClickLevelSelect(item)"
-           :key="item.id">{{ item.name }}</a>
-      </div>
-    </div>
+    <transition name="fade">
+      <div class="final-stage fill" v-if="isFinalStageVisible" v-html="finalStage"></div>
+    </transition>
     <div class="header" v-if="isStarted">
-      <img src="img/army.png">
-      <span>ДОРОГА СЛАВЫ</span>
+      <div class="header__logo">
+        <img src="img/army.png">
+      </div>
+      <span class="header__text">ДОРОГА СЛАВЫ</span>
     </div>
     <div class="left" v-if="isStarted">
-      Здравствуй
+      Здравствуй,
       <div>{{ username }}</div>
     </div>
     <div class="main" v-if="isStarted">
@@ -70,17 +78,25 @@
             <div class="flip-card" :class="classes.rotation">
               <div class="front card-content">
                 <div class="question__text" v-html="questions[index].task.text"></div>
+                <div class="info-button-container">
+                  <a class="button" v-if="isInfoVisible" @click="handleInfoClick">Занимательный факт</a>
+                </div>
                 <div class="answers-container">
                   <div class="answer-button-container" v-for="answer in questions[index].task.answers">
                     <a class="button answer-button" :class="answer.style"
-                       @click="handleAnswerClick(answer.correct, answer.id)">{{ answer.text }}</a>
+                       @click="handleAnswerClick(answer.correct, answer.id)" v-html="answer.text"></a>
                   </div>
                 </div>
-                <a class="button" v-if="isCommentVisible" @click="showComment">Комментарий</a>
+                <transition name="fade">
+                  <a class="button comment-button" v-if="isCommentVisible" @click="showComment">Комментарий</a>
+                </transition>
               </div>
               <div class="back card-content">
-                <div v-html="getComment()"></div>
-                <a class="button" @click="handleCommentClose">закрыть</a>
+                <div class="comment-content" v-html="getComment()"></div>
+                <div class="comment-button-container">
+                  <a class="button" @click="handleCommentClose">закрыть</a>
+                </div>
+
               </div>
             </div>
 
@@ -91,9 +107,17 @@
 
     </div>
     <div class="right" v-if="isStarted">
-      <div v-html="chevron"></div>
+      <transition name="fade">
+        <div class="flex-wrapper flex-wrapper--col" v-html="shoulderStrap" v-if="isStrapVisible"></div>
+      </transition>
     </div>
     <div class="footer" v-if="isStarted"></div>
+    <div class="viewer-container" :class="classes.viewer">
+      <div class="viewer-content" >
+        <div v-html="viewerContent"></div>
+        <a class="button info-button" @click="classes.viewer.slide = false">Ok</a>
+      </div>
+    </div>
   </div>
   <div class="my-copyright"><b>© Краснодарское ПКУ</b></div>
   <script src="js/main.js"></script>

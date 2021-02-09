@@ -119,3 +119,16 @@
   display: none;
 }
 
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.flex-wrapper--row {
+  flex-direction: row;
+}
+
+.flex-wrapper--col {
+  flex-direction: column;
+}
+

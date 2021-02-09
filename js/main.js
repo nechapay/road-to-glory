@@ -13,17 +13,9 @@ const app = new Vue({
             // СВ 1
             {
               id: 1,
-              text: `<div class="question-container">
-                        <div class="question-container__text">
-                          Найдите неверный ответ. Давление на платформу пусковой  установки 
-                          комплекса «Тополь - М» можно уменьшить следующими способами:
-                        </div>
-                        <div class="question-container__image">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C-%D0%9C" target="_blank">
-                            <img src="img/sv-01.png">
-                          </a>
-                        </div>
-                        <div class="question-container__info">
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Тополь М</legend>
                           <div class="question-container__info-grid">
                             <div>Количество ступеней</div>
                             <div>3</div>
@@ -38,7 +30,18 @@ const app = new Vue({
                             <div>Точность</div>
                             <div>150-200 метров</div>
                           </div>
-                        </div> 
+                        </fieldset> `,
+              text: `<div class="question-container">
+                        <div class="question-container__text">
+                          Найдите неверный ответ. Давление на платформу пусковой  установки 
+                          комплекса «Тополь - М» можно уменьшить следующими способами:
+                        </div>
+                        <div class="question-container__image">
+                          <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C-%D0%9C" target="_blank">
+                            <img src="img/sv-01.png">
+                          </a>
+                        </div>
+                        
                      </div>`,
               answers: [
                 {
@@ -96,23 +99,27 @@ const app = new Vue({
             // СВ 2
             {
               id: 2,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            <div class="question-container__info--image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%AF%D1%80%D1%81" target="_blank">
+                                <img src="img/sv-02-2.jpg">
+                              </a>
+                            </div>
+                            <div class="question-container__info--text">
+                              PC-24 «Ярс» (Индекс УРА РВСН 15П165М (шахтный) и 15П155М (подвижный) -  российский 
+                              стратегический ракетный комплекс с твердотопливной межконтинентальной баллистической 
+                              ракетой мобильного и шахтного базирования с разделяющейся головной частью.
+                            </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
-                          В каком случае давление, производимое кирпичом  на стол, будет наименьшим?
-                          <div class="question-container__image">
-                            <img src="img/sv-02-1.jpg"> 
-                          </div>
+                          В каком случае давление, производимое кирпичом  на стол, будет наименьшим?                          
                         </div>
                         <div class="question-container__image">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%AF%D1%80%D1%81" target="_blank">
-                            <img src="img/sv-02-2.jpg">
-                          </a>
-                        </div> 
-                        <div class="question-container__info">
-                          PC-24 «Ярс» (Индекс УРА РВСН 15П165М (шахтный) и 15П155М (подвижный) -  российский 
-                          стратегический ракетный комплекс с твердотопливной межконтинентальной баллистической 
-                          ракетой мобильного и шахтного базирования с разделяющейся головной частью.
-                        </div> 
+                          <img src="img/sv-02-1.jpg"> 
+                        </div>
                      </div>`,
               answers: [
                 {
@@ -161,6 +168,13 @@ const app = new Vue({
             // СВ 3
             {
               id: 3,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            Греки именовали подобные камнемёты «палинтонами», то есть стреляющими по навесной 
+                            траектории, то есть буквально — камень против щита (пронзающий щит камнемёт). 
+                            Наиболее широко употребляется римское название данного орудия — «баллиста» (лат. ballista).
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Механизмами называют устройства, служащие для преобразования
@@ -168,11 +182,6 @@ const app = new Vue({
                         <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D0%BB%D0%B8%D1%81%D1%82%D0%B0" target="_blank">
                         <img src="img/sv-03.jpg"></a></div>
-                        <div class="question-container__info">
-                          Греки именовали подобные камнемёты «палинтонами», то есть стреляющими по навесной 
-                          траектории, то есть буквально — камень против щита (пронзающий щит камнемёт). 
-                          Наиболее широко употребляется римское название данного орудия — «баллиста» (лат. ballista).
-                        </div>
                      </div>`,
               answers: [
                 {
@@ -228,18 +237,29 @@ const app = new Vue({
             // СВ 4
             {
               id: 4,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            <div class="question-container__info--image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D0%BF%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B1%D0%B5%D1%80%D0%B5%D1%82" target="_blank">
+                                <img src="img/sv-04.jpg">
+                              </a>
+                            </div>
+                            <div class="question-container__info--text">
+                              Краповый берет присваивается в порядке прохождения сложных 
+                              квалификационных испытаний.  Марш-бросок 12 км, с преодолением 
+                              специальная полоса препятствий в экстремальных условиях, осмотр 
+                              подготовки по штурму высотных зданий, акробатику и рукопашный 
+                              бой.
+                            </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
-                          В каком случае силы, действующие на опору со стороны кирпича максимальны?
-                          <div class="question-container__image"">
-                            <img src="img/sv-02-1.jpg">
-                          </div>
-                        </div>
-                        <div class="question-container__image"">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D0%BF%D0%BE%D0%B2%D1%8B%D0%B9_%D0%B1%D0%B5%D1%80%D0%B5%D1%82" target="_blank">
-                            <img src="img/sv-04.jpg">
-                          </a>
-                        </div>                        
+                          В каком случае силы, действующие на опору со стороны кирпича максимальны?                         
+                        </div> 
+                        <div class="question-container__image">
+                          <img src="img/sv-02-1.jpg">
+                        </div>                    
                      </div>`,
               answers: [
                 {
@@ -301,23 +321,27 @@ const app = new Vue({
             // СВ 5
             {
               id: 5,
-              text: `<div class="question-container">
-                        <div class="question-container__text">
-                          В каком случае давление, производимое на стол будет наименьшим?
-                          <div class="question-container__image">
-                            <img src="img/sv-05-1.jpg">
-                          </div>
-                        </div>
-                        <div class="question-container__image">
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                          <div class="question-container__info--image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B4%D1%83%D1%88%D0%BD%D0%BE-%D0%B4%D0%B5%D1%81%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B9%D1%81%D0%BA%D0%B0" target="_blank">
-                            <img src="img/vmf-05.jpg">
+                            <img src="img/sv-05-2.jpg">
                           </a>
                         </div>
-                        <div class="question-container__info">
+                        <div class="question-container__info--text">
                           Воздушно-десантные войска (ВДВ) — самостоятельный род войск вооруженных сил, предназначенный 
                           для охвата противника по воздуху и выполнения задач в его тылу по нарушению управления 
                           войсками, захвату и уничтожению наземных элементов, а также по прикрытию (обороне).
                         </div>
+                        </fieldset>`,
+              text: `<div class="question-container">
+                        <div class="question-container__text">
+                          В каком случае давление, производимое на стол будет наименьшим?
+                        </div>   
+                        <div class="question-container__image">
+                          <img src="img/sv-05-1.jpg">
+                        </div>                     
                      </div>`,
               answers: [
                 {
@@ -386,6 +410,13 @@ const app = new Vue({
             // СВ 6
             {
               id: 6,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            Она́гр (от др.-греч. скорпион) — позднеримская метательная машина торсионного типа, 
+                            буквально переводится как дикий осёл. Именно онагр чаще всего неправильно именуется 
+                            катапультой.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Рычаг применяют для получения выигрыша
@@ -394,11 +425,6 @@ const app = new Vue({
                           <a href="https://ru.wikipedia.org/wiki/%D0%9E%D0%BD%D0%B0%D0%B3%D1%80_(%D0%BC%D0%B5%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0)" target="_blank">
                             <img src="img/sv-06.jpg">
                           </a>
-                        </div>
-                        <div class="question-container__info">
-                          Она́гр (от др.-греч. скорпион) — позднеримская метательная машина торсионного типа, 
-                          буквально переводится как дикий осёл. Именно онагр чаще всего неправильно именуется 
-                          катапультой.
                         </div>
                      </div>`,
               answers: [
@@ -459,6 +485,13 @@ const app = new Vue({
             // СВ 7
             {
               id: 7,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            2С35 «Коалиция-СВ» — российский 152-мм межвидовой артиллерийский комплекс на базе танка 
+                            «Т-90» с максимальной дальностью стрельбы до 80 км, максимальным возимым боезапасом до 
+                            70 выстрелов и скорострельностью до 16 выстрелов в минуту.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В каком случае совершается механическая работа?
@@ -466,11 +499,6 @@ const app = new Vue({
                         <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/2%D0%A135" target="_blank">
                           <img src="img/sv-07.jpg"></a>
-                        </div>
-                         <div class="question-container__info">
-                          2С35 «Коалиция-СВ» — российский 152-мм межвидовой артиллерийский комплекс на базе танка 
-                          «Т-90» с максимальной дальностью стрельбы до 80 км, максимальным возимым боезапасом до 
-                          70 выстрелов и скорострельностью до 16 выстрелов в минуту
                         </div>
                      </div>`,
               answers: [
@@ -533,6 +561,8 @@ const app = new Vue({
             // СВ 8
             {
               id: 8,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Снайпер стреляет  по свободно падающему с дерева яблоку, находящемуся на расстоянии 
@@ -608,6 +638,13 @@ const app = new Vue({
             // СВ 9
             {
               id: 9,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            «Вишня» — название боевого ножа, состоящего на вооружении советских и российских 
+                            спецподразделений органов безопасности с 1943 года по настоящее время. Сбалансированный 
+                            нож - нож, в котором центр тяжести совпадает с геометрическим центром.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Чтобы найти опытным путем центр тяжести плоского тела сложной формы, необходимо
@@ -616,11 +653,6 @@ const app = new Vue({
                           <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%88%D0%BD%D1%8F_(%D0%BD%D0%BE%D0%B6)" target="_blank">
                             <img src="img/sv-09-1.jpg">
                           </a>
-                        </div>
-                        <div class="question-container__info">
-                          «Вишня» — название боевого ножа, состоящего на вооружении советских и российских 
-                          спецподразделений органов безопасности с 1943 года по настоящее время. Сбалансированный 
-                          нож - нож, в котором центр тяжести совпадает с геометрическим центром.
                         </div>
                      </div>`,
               answers: [
@@ -668,9 +700,9 @@ const app = new Vue({
                               (вдоль нити проводят линии, в той точке, где они пересекаются, лежит центр тяжести). 
                               Центр тяжести плоской фигуры лежит в точке пересечения вертикалей, проведённых через 
                               две любые точки подвеса. 
-                              <div class="question-container__image">
-                                <img src="img/sv-09-2.png">
-                              </div>               
+                            </div>
+                            <div class="question-container__image">
+                              <img src="img/sv-09-2.png">
                             </div>
                           </div>`,
                 incorrect: `<div class="comment-container">
@@ -679,9 +711,9 @@ const app = new Vue({
                                 (вдоль нити проводят линии, в той точке, где они пересекаются, лежит центр тяжести). 
                                 Центр тяжести плоской фигуры лежит в точке пересечения вертикалей, проведённых через 
                                 две любые точки подвеса. 
-                                <div class="question-container__image">
-                                  <img src="img/sv-09-2.png">
-                                </div>
+                              </div>
+                              <div class="question-container__image">
+                                <img src="img/sv-09-2.png">
                               </div>
                             </div>`
               }
@@ -689,6 +721,13 @@ const app = new Vue({
             // СВ 10
             {
               id: 10,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            Ф-1 - ручная противопехотная оборонительная граната, предназначена для поражения живой 
+                            силы в оборонительном бою. Радиус разлёта осколков (до 150 метров) метать её можно 
+                            только из-за укрытия, из бронетранспортёра или из танка.  На вооружение с  1940г.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Под каким углом нужно бросить ручную противопехотную гранату Ф-1 для наибольшей 
@@ -699,16 +738,11 @@ const app = new Vue({
                             <img src="img/sv-10-1.jpg">
                           </a>
                         </div>
-                        <div class="question-container__info">
-                          Ф-1 - ручная противопехотная оборонительная граната, предназначена для поражения живой 
-                          силы в оборонительном бою. Радиус разлёта осколков (до 150 метров) метать её можно 
-                          только из-за укрытия, из бронетранспортёра или из танка.  На вооружение с  1940г.
-                        </div>
                      </div>`,
               answers: [
                 {
                   id: 1,
-                  text: `90\t&#176;`,
+                  text: `90&#176;`,
                   correct: false,
                   style: {
                     correct: false,
@@ -717,7 +751,7 @@ const app = new Vue({
                 },
                 {
                   id: 2,
-                  text: `60\t&#176;`,
+                  text: `60&#176;`,
                   correct: false,
                   style: {
                     correct: false,
@@ -726,7 +760,7 @@ const app = new Vue({
                 },
                 {
                   id: 3,
-                  text: `45\t&#176;`,
+                  text: `45&#176;`,
                   correct: true,
                   style: {
                     correct: false,
@@ -735,7 +769,7 @@ const app = new Vue({
                 },
                 {
                   id: 4,
-                  text: `30\t&#176;`,
+                  text: `30&#176;`,
                   correct: false,
                   style: {
                     correct: false,
@@ -747,23 +781,23 @@ const app = new Vue({
                 incorrect: `<div class="comment-container">
                             <div class="comment-container__text">
                               Не пользуясь формулой  для определения дальности полета  и не зная, что такое синус 
-                              угла (<img src="img/sv-10-2.png">), будем рассуждать так. Если тело бросить под углом 900 (т.е. вертикально вверх 
+                              угла (<img src="img/sv-10-2.png">), будем рассуждать так. Если тело бросить под углом 90&#176; (т.е. вертикально вверх 
                               над головой), то его высота полёта будет максимальна и тело упадет назад, а его дальность 
                               будет равна 0м. 
-                              Если  тело бросить под углом 00 (т.е. ровно пред собой), то его высота полёта будет 
+                              Если  тело бросить под углом 0&#176; (т.е. ровно пред собой), то его высота полёта будет 
                               равна 0 м  и тело, пролетев вперед очень скоро упадет. Значит нужно выбрать 
-                              угол между 0\t&#176; и 90\t&#176;. Т.е. 45\t&#176;  
+                              угол между 0&#176; и 90&#176;. Т.е. 45&#176;  
                             </div>
                           </div>`,
                 correct: `<div class="comment-container">
                               <div class="comment-container__text">
                                 Верно! Не пользуясь формулой  для определения дальности полета  и не зная, что такое синус 
-                                угла (<img src="img/sv-10-2.png">), будем рассуждать так. Если тело бросить под углом 900 (т.е. вертикально вверх 
+                                угла (<img src="img/sv-10-2.png">), будем рассуждать так. Если тело бросить под углом 90&#176; (т.е. вертикально вверх 
                                 над головой), то его высота полёта будет максимальна и тело упадет назад, а его дальность 
                                 будет равна 0м. 
-                                Если  тело бросить под углом 00 (т.е. ровно пред собой), то его высота полёта будет 
+                                Если  тело бросить под углом 0&#176 (т.е. ровно пред собой), то его высота полёта будет 
                                 равна 0 м  и тело, пролетев вперед очень скоро упадет. Значит нужно выбрать 
-                                угол между 0\t&#176; и 90\t&#176;. Т.е. 45\t&#176;
+                                угол между 0&#176; и 90&#176;. Т.е. 45&#176;
                               </div>
                             </div>`
               }
@@ -776,6 +810,8 @@ const app = new Vue({
             // ВКС 1
             {
               id: 1,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">Если в 12 часов ночи идет дождь, то есть ли вероятность, 
                         что через 72 часа будет солнечная погода?</div>
@@ -815,6 +851,8 @@ const app = new Vue({
             // ВКС 2
             {
               id: 2,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">Отряд разведчиков был направлен в горы. 
                         Один из бойцов измерил атмосферное давление у подножия и на вершине горы. 
@@ -881,16 +919,21 @@ const app = new Vue({
             // ВКС 3
             {
               id: 3,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                          Самая быстра ракета в мире – «Циркон» или 3M22 — 
+                          российская гиперзвуковая противокорабельная крылатая ракета,  разрабатываемая «НПО машиностроения». 
+                          Скоростные характеристики «Циркона» (9800–11025 км/ч или 2700–3062 м/с) делают её недоступной 
+                          для существующих систем ПРО противника.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">Космическое тело, упавшее на поверхность 
                         Земли, называется...</div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%A6%D0%B8%D1%80%D0%BA%D0%BE%D0%BD_(%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0)" target="_blank">
                         <img src="img/vks-03.jpg"></a></div>
-                        <div class="question-container__info">Самая быстра ракета в мире – «Циркон» или 3M22 — 
-                        российская гиперзвуковая противокорабельная крылатая ракета,  разрабатываемая «НПО машиностроения». 
-                        Скоростные характеристики «Циркона» (9800–11025 км/ч или 2700–3062 м/с) делают её недоступной 
-                        для существующих систем ПРО противника. </div>
+                        
                      </div>`,
               answers: [
                 {
@@ -960,11 +1003,13 @@ const app = new Vue({
             // ВКС 4
             {
               id: 4,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">В каком случае сила Архимеда, действующая на Су-57 - 
                         российский многофункциональный истребитель пятого поколения, созданный ОКБ имени П. О. 
                         Сухого, будет больше: у поверхности земли или на высоте 10 км?</div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%83-57" target="_blank">
                         <img src="img/vks-04.jpg"></a></div>
                      </div>`,
@@ -1028,12 +1073,15 @@ const app = new Vue({
             // ВКС 5
             {
               id: 5,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
-                        <div class="question-container__text">Какие изображенные здесь опыты свидетельствуют о 
-                        действии закона Паскаля?<hr><div class="question-container__image""><img src="img/vks-05-2.jpg"></div></div>
-                        <div class="question-container__image"">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" target="_blank">
-                        <img src="img/vks-05-1.jpg"></a></div>
+                        <div class="question-container__text">
+                          Какие изображенные здесь опыты свидетельствуют о действии закона Паскаля?<hr>
+                          <div class="question-container__image"">
+                            <img src="img/vks-05-2.jpg">
+                          </div>
+                        </div>                        
                      </div>`,
               answers: [
                 {
@@ -1084,6 +1132,11 @@ const app = new Vue({
                               на опору и площади опоры.<br>
                               Установка №4 показывает поверхностное натяжение жидкости.                      
                             </div>
+                            <div class="comment-container__image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" target="_blank">
+                                <img src="img/vks-05-1.jpg">
+                              </a>
+                            </div>
                           </div>`,
                 incorrect: `<div class="comment-container">
                               <div class="comment-container__text">
@@ -1095,20 +1148,31 @@ const app = new Vue({
                                 опору и площади опоры.<br>
                                 Установка №4 показывает поверхностное натяжение жидкости. 
                               </div>
+                             <div class="comment-container__image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" target="_blank">
+                                <img src="img/vks-05-1.jpg">
+                              </a>
+                             </div>
                             </div>`
               }
             },
             // ВКС 6
             {
               id: 6,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                          ВД-28 (стоит на МИГ-29), Буквы названиях означают «высотомер двухстрелочный», а  28 - 
+                          это максимальная высота измерения 28 км.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">Каким физическим прибором измеряется атмосферное 
                         давление? На  принципе работы данного прибора был создан высотомер для самолетов.</div>
-                        <div class="question-container__image"">
-                        <a href="http://avia-simply.ru/visotomer-i-visota-poleta-samoleta/" target="_blank">
-                        <img src="img/vks-06.jpg"></a></div>
-                        <div class="question-container__info">ВД-28 (стоит на МИГ-29), Буквы названиях означают 
-                        «высотомер двухстрелочный», а  28 - это максимальная высота измерения 28 км.</div>
+                        <div class="question-container__image">
+                          <a href="http://avia-simply.ru/visotomer-i-visota-poleta-samoleta/" target="_blank">
+                            <img src="img/vks-06.jpg">
+                          </a>
+                        </div>
                      </div>`,
               answers: [
                 {
@@ -1170,19 +1234,26 @@ const app = new Vue({
             // ВКС 7
             {
               id: 7,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>                          
+                          <div class="question-container__info--image">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%A0%D0%AD%D0%9C-1" target="_blank">
+                              <img src="img/vks-07-1.jpg">
+                            </a>
+                          </div>
+                          <div class="question-container__info--text">
+                            Бронированная ремонтно-эвакуационная машина 1 (БРЭМ-1, «Объект 608») предназначена для 
+                            эвакуации застрявшей и повреждённой техники (БТР, БМП, БМД, танков и др.), в том числе и 
+                            из-под огня противника. Обеспечивает необходимый ремонт и техническое обслуживание 
+                            в полевых условиях.
+                          </div>
+                        </fieldset>`,
               text: `<div class="question-container">
-                        <div class="question-container__text">Какие изображенные здесь опыты свидетельствуют о 
-                          действии закона Паскаля?<hr>
-                          <div class="question-container__image""><img src="img/vks-07-2.jpg"></div>
+                        <div class="question-container__text">Каким механизмом легче поднять груз?
                         </div>
                         <div class="question-container__image"">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%A0%D0%AD%D0%9C-1" target="_blank">
-                          <img src="img/vks-07-1.jpg"></a>
-                        </div>
-                        <div class="question-container__info">Бронированная ремонтно-эвакуационная машина 1 
-                          (БРЭМ-1, «Объект 608») предназначена для эвакуации застрявшей и повреждённой техники 
-                          (БТР, БМП, БМД, танков и др.), в том числе и из-под огня противника. Обеспечивает необходимый 
-                          ремонт и техническое обслуживание в полевых условиях.
+                          <img src="img/vks-07-2.jpg">
                         </div>
                      </div>`,
               answers: [
@@ -1238,20 +1309,22 @@ const app = new Vue({
             // ВКС 8
             {
               id: 8,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>                          
+                          <div class="question-container__info--image"">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%81%D0%B0%D1%81%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B5%D0%B9" target="_blank">
+                              <img src="img/vks-08-3.jpg">
+                            </a>
+                         </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Положите одинаковые книги на стол на расстоянии около 
                           10 см одна от другой. Положите лист бумаги на края обеих книг, чтобы он мостиком лег 
                           между ними. Изо всех сил подуть под лист бумаги.  Вопрос: куда полетит этот листочек?
                         </div>
-                        <div class="question-container__image"">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%81%D0%B0%D1%81%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B5%D0%B9" target="_blank">
-                          <img src="img/vks-08-1.jpg"></a>
-                        </div>
-                        <div class="question-container__info">Бронированная ремонтно-эвакуационная машина 1 
-                          (БРЭМ-1, «Объект 608») предназначена для эвакуации застрявшей и повреждённой техники 
-                          (БТР, БМП, БМД, танков и др.), в том числе и из-под огня противника. Обеспечивает необходимый 
-                          ремонт и техническое обслуживание в полевых условиях.
+                        <div class="question-container__image">
+                          <img src="img/vks-08-1.jpg">
                         </div>
                      </div>`,
               answers: [
@@ -1295,49 +1368,41 @@ const app = new Vue({
               comment: {
                 correct: `<div class="comment-container">
                             <div class="comment-container__text">
-                              <div class="question-container__image"">
+                              Верно! До того как вы начали дуть, на лист бумаги действует давление воздуха в равной 
+                              степени как сверху, так и снизу. По мере того как скорость потока воздуха под листом 
+                              бумаги увеличивается, давление воздуха с другой стороны листа возрастает, а снизу 
+                              уменьшается. Таким образом, возрастающее давление воздуха на лист сверху прогибает 
+                              его вниз.                      
+                            </div>                            
+                            <div class="comment-container__image"">
                                 <img src="img/vks-08-2.jpg">    
-                              </div>                              
-                              Верно! У неподвижного блока ось диска закреплена, в связи с чем, во время подъёма 
-                              груза диск только крутится вокруг своей оси. Выигрыш в силе (экономия силы) при таком 
-                              виде блока отсутствует, но такой блок позволяет изменить направление действия силы, что 
-                              часто необходимо для удобства. У подвижного блока диск перемещается вместе с грузом, 
-                              поэтому  достигается двукратная экономия силы.                      
-                            </div>
-                            <div class="question-container__image"">
-                              <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%81%D0%B0%D1%81%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B5%D0%B9" target="_blank">
-                                <img src="img/vks-08-3.jpg">
-                              </a>
                             </div>
                           </div>`,
                 incorrect: `<div class="comment-container">
-                              <div class="comment-container__text">
-                                <div class="question-container__image"">
-                                  <img src="img/vks-08-2.jpg">    
-                                </div>
-                                У неподвижного блока ось диска закреплена, в связи с чем, во время подъёма груза 
-                                диск только крутится вокруг своей оси. Выигрыш в силе (экономия силы) при таком 
-                                виде блока отсутствует, но такой блок позволяет изменить направление действия силы, 
-                                что часто необходимо для удобства. У подвижного блока диск перемещается вместе с 
-                                грузом, поэтому  достигается двукратная экономия силы. 
-                              </div>
-                              <div class="question-container__image"">
-                                <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%81%D0%B0%D1%81%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D0%B5%D0%B9" target="_blank">
-                                  <img src="img/vks-08-3.jpg">
-                                </a>
-                              </div>
-                            </div>`
+                            <div class="comment-container__text">
+                              До того как вы начали дуть, на лист бумаги действует давление воздуха в равной 
+                              степени как сверху, так и снизу. По мере того как скорость потока воздуха под листом 
+                              бумаги увеличивается, давление воздуха с другой стороны листа возрастает, а снизу 
+                              уменьшается. Таким образом, возрастающее давление воздуха на лист сверху прогибает 
+                              его вниз.                      
+                            </div>                            
+                            <div class="comment-container__image"">
+                                <img src="img/vks-08-2.jpg">    
+                            </div>
+                          </div>`
               }
             },
             // ВКС 9
             {
               id: 9,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Представьте, что воздушный шар уносится непрерывным ветром на юг. Тогда в какую сторону 
                           развиваются флаги на его гондоле?
                         </div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B4%D1%83%D1%88%D0%BD%D1%8B%D0%B9_%D1%88%D0%B0%D1%80" target="_blank">
                           <img src="img/vks-09.jpg"></a>
                         </div>
@@ -1400,12 +1465,26 @@ const app = new Vue({
             // ВКС 10
             {
               id: 10,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>                          
+                          <div class="question-container__info--image"">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B5%D1%82%D1%82%D0%BD%D0%B5%D1%80,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD" target="_blank">
+                              <img src="img/vks-10-4.jpg">
+                            </a></div>
+                          </div>
+                            <div class="question-container__info--text">
+                              Первый "ветроход" - трехмачтовая шхуна "Букау", 
+                              созданная Антоном  Флеттнером - немецким авиационным инженером  и изобретателем.
+                              Флеттнер заменил парус на судне вращающимся цилиндром.
+                            </div>
+                         </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Возьмите воронку из бумаги или картона и через нее изо всех сил задуйте 
                           свечку как на рисунке.  В какую сторону будет направлено пламя свечи?
                         </div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                           <img src="img/vks-10-1.jpg">
                         </div>
                      </div>`,
@@ -1450,9 +1529,6 @@ const app = new Vue({
               comment: {
                 incorrect: `<div class="comment-container">
                             <div class="comment-container__text">
-                              <div class="question-container__image"">
-                                <img src="img/vks-10-2.jpg"><img src="img/vks-10-3.jpg">
-                              </div>
                               Пламя свечи не только не погаснет, а наоборот, будет поворачиваться в сторону, 
                               наиболее сильного потока. Поскольку плотность газов в пламени свечи меньше, чем 
                               плотность воздуха, то сила, действующая на пламя, меньше, чем сила, действующая 
@@ -1463,21 +1539,12 @@ const app = new Vue({
                               легко. Пламя при этом отклонится вперед и загаснет. Опыт показывает, что воздушная струя 
                               в воронке растекается вдоль ее стенок.  
                             </div>
-                            <div class="question-container__image"">
-                              <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B5%D1%82%D1%82%D0%BD%D0%B5%D1%80,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD" target="_blank">
-                              <img src="img/vks-10-4.jpg"></a></div>
-                              <div class="question-container__info">
-                                Первый "ветроход" - трехмачтовая шхуна "Букау", 
-                                созданная Антоном  Флеттнером - немецким авиационным инженером  и изобретателем.
-                                Флеттнер заменил парус на судне вращающимся цилиндром.
-                              </div>
+                            <div class="comment-container__image">
+                              <img src="img/vks-10-2.jpg">
                             </div>
                           </div>`,
                 correct: `<div class="comment-container">
                               <div class="comment-container__text">
-                                <div class="question-container__image"">
-                                  <img src="img/vks-10-2.jpg"><img src="img/vks-10-3.jpg">
-                                </div>
                                 Верно! Пламя свечи не только не погаснет, а наоборот, будет поворачиваться в сторону, 
                                 наиболее сильного потока. Поскольку плотность газов в пламени свечи меньше, чем 
                                 плотность воздуха, то сила, действующая на пламя, меньше, чем сила, действующая 
@@ -1488,14 +1555,8 @@ const app = new Vue({
                                 легко. Пламя при этом отклонится вперед и загаснет. Опыт показывает, что воздушная струя 
                                 в воронке растекается вдоль ее стенок.
                               </div>
-                              <div class="question-container__image"">
-                                <a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%BB%D0%B5%D1%82%D1%82%D0%BD%D0%B5%D1%80,_%D0%90%D0%BD%D1%82%D0%BE%D0%BD" target="_blank">
-                                <img src="img/vks-10-4.jpg"></a></div>
-                                <div class="question-container__info">
-                                  Первый "ветроход" - трехмачтовая шхуна "Букау", 
-                                  созданная Антоном  Флеттнером - немецким авиационным инженером  и изобретателем.
-                                  Флеттнер заменил парус на судне вращающимся цилиндром.
-                                </div>
+                              <div class="comment-container__image">
+                                <img src="img/vks-10-2.jpg">
                               </div>
                             </div>`
               }
@@ -1508,6 +1569,27 @@ const app = new Vue({
             // ВМФ 1
             {
               id: 1,
+              info: true,
+              infoText: `<fieldset class="question-container__info flex-wrapper--col">
+                          <legend>Справка</legend>
+                            В 2020-ом году в рамках Военно-Технического форума 
+                            "Армия-2020" Концерн Калашников представил обновлённую версию АК-12.
+                            <div class="question-container__info-grid">
+                              <div>Калибр, мм</div>
+                              <div>5,45</div>
+                              <div>Скорострельность, выстрелов/мин</div>
+                              <div>650</div>
+                              <div>Начальная скорость пули, м/с</div>
+                              <div>900</div>
+                              <div>Прицельная дальность, м</div>
+                              <div>1000</div>
+                              <div>Вид боепитания</div>
+                              <div>магазины: коробчатые на 30 или 60 (6Л31), барабанный на 96 патронов.</div>
+                              <div>Прицел</div>
+                              <div>съёмный комбинированный секторный, длина прицельной линии — 414 / 583 мм 
+                              (открытый / диоптрический)</div>
+                            </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           На одной чаше весов лежит камень, масса которого равна 
@@ -1519,25 +1601,6 @@ const app = new Vue({
                             <img src="img/vmf-01.jpg">
                           </a>
                         </div>
-                        <div class="question-container__info">
-                          В 2020-ом году в рамках Военно-Технического форума 
-                          "Армия-2020" Концерн Калашников представил обновлённую версию АК-12.  Характеристики автомат:
-                          <div class="question-container__info-grid">
-                            <div>Калибр, мм</div>
-                            <div>5,45</div>
-                            <div>Скорострельность, выстрелов/мин</div>
-                            <div>650</div>
-                            <div>Начальная скорость пули, м/с</div>
-                            <div>900</div>
-                            <div>Прицельная дальность, м</div>
-                            <div>1000</div>
-                            <div>Вид боепитания</div>
-                            <div>магазины: коробчатые на 30 или 60 (6Л31), барабанный на 96 патронов.</div>
-                            <div>Прицел</div>
-                            <div>съёмный комбинированный секторный, длина прицельной линии — 414 / 583 мм 
-                            (открытый / диоптрический)</div>
-                          </div>
-                        </div> 
                      </div>`,
               answers: [
                 {
@@ -1601,6 +1664,8 @@ const app = new Vue({
             // ВМФ 2
             {
               id: 2,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Какие изображенные здесь опыты свидетельствуют о действии закона Паскаля?
@@ -1673,6 +1738,14 @@ const app = new Vue({
             // ВМФ 3
             {
               id: 3,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            АС-12, известная также как «Лошарик» - российская сверхсекретная глубоководная атомная 
+                            подводная лодка , не несущая вооружения и способная погружаться, по некоторым данным, 
+                            на глубину до 6000 метров (практически было продемонстрировано погружение аппарата на 
+                            глубину до 3000 метров).
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В два сосуда, показанные на рисунке, налили по 1 л воды. В каком из 
@@ -1684,12 +1757,6 @@ const app = new Vue({
                         <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%A1-12#:~:text=%D0%90%D0%A1%2D12%20(%D0%BF%D0%BE%20%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%BC%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC,%D0%BD%D0%B0%20%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D1%83%20%D0%B4%D0%BE%206000%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20(" target="_blank">
                         <img src="img/vmf-03-2.jpg"></a></div>
-                        <div class="question-container__info">
-                          АС-12, известная также как «Лошарик» - российская сверхсекретная глубоководная атомная 
-                          подводная лодка , не несущая вооружения и способная погружаться, по некоторым данным, 
-                          на глубину до 6000 метров (практически было продемонстрировано погружение аппарата на 
-                          глубину до 3000 метров).
-                        </div>
                      </div>`,
               answers: [
                 {
@@ -1743,17 +1810,19 @@ const app = new Vue({
             // ВМФ 4
             {
               id: 4,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           К-329 «Белгород» - российская атомная подводная лодка (АПЛ), единственный представитель 
                           проекта 09852, носитель беспилотных подводных аппаратов типа «Посейдон». Подводная лодка 
                           (условно брусок) опускается  в Тихом океане (условно аквариум). В каком из положений 
                           действующая на него сила Архимеда будет наибольшей?
-                          <div class="question-container__image"">
+                          <div class="question-container__image">
                             <img src="img/vmf-04-1.jpg">
                           </div>
                         </div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%9A-329_%C2%AB%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%C2%BB" target="_blank">
                             <img src="img/vmf-04-2.jpg">
                           </a>
@@ -1823,12 +1892,14 @@ const app = new Vue({
             // ВМФ 5
             {
               id: 5,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Четыре российских подводных лодки  изготовленные из одинакового материала, 
                           полностью опускаются на дно Белого моря (340 м. На какую из них действует 
                           наименьшая сила Архимеда?
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%A1-411_%C2%AB%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%C2%BB" target="_blank">
                         <img src="img/vmf-05.jpg"></a></div>
                      </div>`,
@@ -1896,6 +1967,14 @@ const app = new Vue({
             // ВМФ 6
             {
               id: 6,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            Сверхмалые подводные лодки проекта 908 «Тритон-2». Состояли на вооружении флота с 
+                            1975 года по 1990-е годы. Предназначены для патрулирования акватории портов и рейдов, 
+                            доставки и эвакуации водолазов-разведчиков, минирования причалов, кораблей противника, 
+                            исследования морского дна.
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В каких точках, обозначенных на рисунке, давления  жидкости на сверхмалую 
@@ -1907,12 +1986,6 @@ const app = new Vue({
                         <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_908_%C2%AB%D0%A2%D1%80%D0%B8%D1%82%D0%BE%D0%BD-2%C2%BB" target="_blank">
                         <img src="img/vmf-06-2.jpg"></a></div>
-                        <div class="question-container__info">
-                          Сверхмалые подводные лодки проекта 908 «Тритон-2». Состояли на вооружении флота с 
-                          1975 года по 1990-е годы. Предназначены для патрулирования акватории портов и рейдов, 
-                          доставки и эвакуации водолазов-разведчиков, минирования причалов, кораблей противника, 
-                          исследования морского дна.
-                        </div>
                      </div>`,
               answers: [
                 {
@@ -1974,6 +2047,8 @@ const app = new Vue({
             // ВМФ 7
             {
               id: 7,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Новейший патрульный катер проекта 03160 "Раптор" 
@@ -1981,7 +2056,7 @@ const app = new Vue({
                           реку Неву, которая впадает в Невскую губу Финского залива, относящегося к Балтийскому морю. 
                           Как при этом преследовании меняется сила Архимеда, действующая на катер?
                         </div>
-                        <div class="question-container__image"">
+                        <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%82%D1%80%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B0_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_03160" target="_blank">
                           <img src="img/vmf-07.jpg"></a>
                         </div>
@@ -2052,6 +2127,8 @@ const app = new Vue({
             // ВМФ 8
             {
               id: 8,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Представим себе, что Вы командир стратегической атомной  подводной  
@@ -2125,6 +2202,22 @@ const app = new Vue({
             // ВМФ 9
             {
               id: 9,
+              info: true,
+              infoText: `<fieldset class="question-container__info">
+                          <legend>Справка</legend>
+                            Тяжёлый авианесущий крейсер проекта 1143.5 «Адмирал Флота 
+                            Советского Союза Кузнецов». В 2017 году крейсер вернулся из похода в Сирию.
+                            <div class="question-container__info-grid">
+                              <div>Наибольшее Водоизмещение</div>
+                              <div>61 390 т</div>
+                              <div>Наибольшая Длина</div>
+                              <div>306,45 м</div>
+                              <div>Наибольшая Ширина</div>
+                              <div>71,96 м</div>
+                              <div>Габаритная Высота</div>
+                              <div>64,49 м</div>
+                            </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В бассейне плавает лодка. Как изменится уровень воды в бассейне, если из лодки в 
@@ -2133,20 +2226,6 @@ const app = new Vue({
                         <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%B4%D0%BC%D0%B8%D1%80%D0%B0%D0%BB_%D0%A4%D0%BB%D0%BE%D1%82%D0%B0_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%A1%D0%BE%D1%8E%D0%B7%D0%B0_%D0%9A%D1%83%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2" target="_blank">
                           <img src="img/vmf-09.jpg"></a>
-                        </div>
-                        <div class="question-container__info">
-                          Тяжёлый авианесущий крейсер проекта 1143.5 «Адмирал Флота 
-                          Советского Союза Кузнецов». В 2017 году крейсер вернулся из похода в Сирию.
-                          <div class="question-container__info-grid">
-                            <div>Наибольшее Водоизмещение</div>
-                            <div>61 390 т</div>
-                            <div>Наибольшая Длина</div>
-                            <div>306,45 м</div>
-                            <div>Наибольшая Ширина</div>
-                            <div>71,96 м</div>
-                            <div>Габаритная Высота</div>
-                            <div>64,49 м</div>
-                          </div>
                         </div>
                      </div>`,
               answers: [
@@ -2211,6 +2290,8 @@ const app = new Vue({
             // ВМФ 10
             {
               id: 10,
+              info: false,
+              infoText: '',
               text: `<div class="question-container">
                         <div class="question-container__text">
                           При создании тяжёлого ракетного подводного крейсера стратегического назначения 
@@ -2294,7 +2375,6 @@ const app = new Vue({
       leave: {
         'leave': false
       },
-
       questions: [
         {
           id: 1,
@@ -2419,10 +2499,11 @@ const app = new Vue({
           leave: false
         },
         startPage: {
-          hide: false
+          hide: false,
+          leave: false
         },
         levelSelect: {
-          hide: false
+          hide: true
         },
         startControls: {
           hide: false
@@ -2440,17 +2521,161 @@ const app = new Vue({
         },
         rotation: {
           rotate: false
+        },
+        viewer: {
+          slide: false
         }
       },
       started: false,
       index: 0,
-      shoulderStraps: [
-        {
-          'ВКС': '',
-          'СВ': '',
-          'ВМФ': ''
-        }
-      ]
+      points: 0,
+      viewerContent: '',
+      shoulderStraps: {
+        'ВКС': [
+          {
+            name: 'Рядовой',
+            img: 'img/svg/vks-0.svg'
+          },
+          {
+            name: 'Мл. лейтенант',
+            img: 'img/svg/vks-1.svg'
+          },
+          {
+            name: 'Лейтенант',
+            img: 'img/svg/vks-2.svg'
+          },
+          {
+            name: 'Ст. лейтенант',
+            img: 'img/svg/vks-3.svg'
+          },
+          {
+            name: 'Капитан',
+            img: 'img/svg/vks-4.svg'
+          },
+          {
+            name: 'Майор',
+            img: 'img/svg/vks-5.svg'
+          },
+          {
+            name: 'Подполковник',
+            img: 'img/svg/vks-6.svg'
+          },
+          {
+            name: 'Полковник',
+            img: 'img/svg/vks-7.svg'
+          },
+          {
+            name: 'Генерал-майор',
+            img: 'img/svg/vks-8.svg'
+          },
+          {
+            name: 'Генерал-лейтенант',
+            img: 'img/svg/vks-9.svg'
+          },
+          {
+            name: 'Генерал-полковник',
+            img: 'img/svg/vks-10.svg'
+          }
+        ],
+        'СВ': [
+          {
+            name: 'Рядовой',
+            img: 'img/svg/sv-0.svg'
+          },
+          {
+            name: 'Мл. лейтенант',
+            img: 'img/svg/sv-1.svg'
+          },
+          {
+            name: 'Лейтенант',
+            img: 'img/svg/sv-2.svg'
+          },
+          {
+            name: 'Ст. лейтенант',
+            img: 'img/svg/sv-3.svg'
+          },
+          {
+            name: 'Капитан',
+            img: 'img/svg/sv-4.svg'
+          },
+          {
+            name: 'Майор',
+            img: 'img/svg/sv-5.svg'
+          },
+          {
+            name: 'Подполковник',
+            img: 'img/svg/sv-6.svg'
+          },
+          {
+            name: 'Полковник',
+            img: 'img/svg/sv-7.svg'
+          },
+          {
+            name: 'Генерал-майор',
+            img: 'img/svg/sv-8.svg'
+          },
+          {
+            name: 'Генерал-лейтенант',
+            img: 'img/svg/sv-9.svg'
+          },
+          {
+            name: 'Генерал-полковник',
+            img: 'img/svg/sv-10.svg'
+          }
+        ],
+        'ВМФ': [
+          {
+            name: 'Матрос',
+            img: 'img/svg/vks-0.svg'
+          },
+          {
+            name: 'Мл. лейтенант',
+            img: 'img/svg/vmf-1.svg'
+          },
+          {
+            name: 'Лейтенант',
+            img: 'img/svg/vmf-2.svg'
+          },
+          {
+            name: 'Ст. лейтенант',
+            img: 'img/svg/vmf-3.svg'
+          },
+          {
+            name: 'Капитан-лейтенант',
+            img: 'img/svg/vmf-4.svg'
+          },
+          {
+            name: 'Капитан 3-го ранга',
+            img: 'img/svg/vmf-5.svg'
+          },
+          {
+            name: 'Капитан 2-го ранга',
+            img: 'img/svg/vmf-6.svg'
+          },
+          {
+            name: 'Капитан 1-го ранга',
+            img: 'img/svg/vmf-7.svg'
+          },
+          {
+            name: 'Контр-адмирал',
+            img: 'img/svg/vmf-8.svg'
+          },
+          {
+            name: 'Вице-адмирал',
+            img: 'img/svg/vmf-9.svg'
+          },
+          {
+            name: 'Адмирал',
+            img: 'img/svg/vmf-10.svg'
+          }
+        ]
+      },
+      usernameControlsVisible: true,
+      levelSelectControlsVisible: false,
+      strapVisible: false,
+      commentPrevent: false,
+      finalStageVisible: false,
+      finalStage: ''
     }
   },
   watch: {
@@ -2458,7 +2683,15 @@ const app = new Vue({
       if (val === this.questions.length) {
         this.index = this.questions.length - 1
       }
+      this.commentPrevent = false
       this.questions[this.index].task.answers = _.shuffle(this.questions[this.index].task.answers)
+    },
+    points: function (val, oldVal) {
+      this.strapVisible = false
+      let that = this
+      setTimeout(function () {
+        that.strapVisible = true
+      }, 10)
     }
   },
   computed: {
@@ -2466,42 +2699,57 @@ const app = new Vue({
       return this.started
     },
     isCommentVisible() {
-      return !_.isNil(this.questions[this.index].task.comment) && this.questions[this.index].prevent
+      return !_.isNil(this.questions[this.index].task.comment) && this.questions[this.index].prevent && !this.commentPrevent
+    },
+    isUsernameControlsVisible() {
+      return this.usernameControlsVisible
+    },
+    isLevelSelectControlsVisible() {
+      return this.levelSelectControlsVisible
+    },
+    isInfoVisible() {
+      return this.questions[this.index].task.info && this.questions[this.index].prevent
+    },
+    shoulderStrap() {
+      return `<div class="strap-title">${this.shoulderStraps[this.currentCategory][this.points].name}</div>
+              <div><img src="${this.shoulderStraps[this.currentCategory][this.points].img}"></div>`
+    },
+    isStrapVisible() {
+      return this.strapVisible
+    },
+    isFinalStageVisible() {
+      return this.finalStageVisible
     }
   },
   mounted() {
-    this.start()
   },
   methods: {
     start() {
-      this.header = '2222'
+      this.usernameControlsVisible = false
+      this.levelSelectControlsVisible = true
     },
     startClick() {
-      console.log(this.username)
       if (this.username !== '') {
-        this.classes.right.leave = true
-        this.classes.left.leave = true
-        this.classes.startControls.hide = true
-        let that = this
-        setTimeout(function () {
-          that.classes.startPage['hide'] = true
-        }, 1000)
+        this.start()
+      }
+    },
+    handleStartKeyPressed(val) {
+      if(val.key === 'Enter' && this.username !== '') {
+        this.start()
       }
     },
     handleClickLevelSelect(val) {
-      this.classes.top.leave = true
-      this.classes.bottom.leave = true
-      this.classes.levelControls.hide = true
+      this.levelSelectControlsVisible = false
+      this.classes.startPage.leave = true
       this.started = true
       let that = this
       setTimeout(function () {
-        that.classes.levelSelect['hide'] = true
+        that.classes.startPage['hide'] = true
+        that.strapVisible = true
       }, 1000)
       if (val) {
         this.currentCategory = val.short
       }
-      /* TODO set variable to function */
-      console.log('cat', this.currentCategory)
       this.loadQuestions(this.currentCategory)
     },
     loadQuestions(cat) {
@@ -2528,6 +2776,7 @@ const app = new Vue({
       if (!this.questions[this.index].prevent) {
         if (val) {
           this.questions[this.index].completed = true
+          this.points++
         }
         this.questions[this.index].task.answers.forEach(function (item) {
           if (item.correct) {
@@ -2555,14 +2804,28 @@ const app = new Vue({
       }, 1000)
     },
     nextStage() {
-      // this.questions[this.index].disabled = true
+      this.questions[this.index].disabled = true
       this.currentPage = 'main'
       this.index++
-      this.questions[this.index].disabled = false
-      console.log('3', this.questions)
+      if (!_.isNil(this.questions[this.index])) {
+        this.questions[this.index].disabled = false
+      } else {
+        this.final()
+      }
     },
     showComment() {
-      this.classes.rotation.rotate = true
+      if( !this.commentPrevent) {
+        this.classes.rotation.rotate = true
+      }
+      this.commentPrevent = true
+    },
+    handleInfoClick() {
+      this.viewerContent = this.questions[this.index].task.infoText
+      this.classes.viewer.slide = true
+    },
+    final() {
+      this.finalStage = `<div class="final-stage__header">Поздравляем с прохождением дороги славы!</div>`
+      this.finalStageVisible = true
     }
   }
 })
