@@ -287,7 +287,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 30%;
-  height: 20%;
+  height: 26%;
   background: rgba(83, 80, 80, 0.7);
   box-shadow: 1px 1px 50px #000;
 }
@@ -447,6 +447,7 @@ img {
   color: white;
   font-size: 150%;
   text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .main__question {
@@ -557,9 +558,13 @@ img {
 
 .question-container {
   display: grid;
-  grid-template-areas: "image text " "image text";
-  padding: 2vmin;
+  grid-template-areas: "image text";
+  padding: 4vmin;
   grid-gap: 1vmin;
+}
+
+.g-t-c-55-45 {
+  grid-template-columns: 55% 45%;
 }
 
 .question-container__text {
@@ -574,7 +579,7 @@ img {
 .question-container__image {
   grid-area: image;
   width: 100%;
-  height: 300px;
+  height: 340px;
 }
 
 
@@ -682,7 +687,7 @@ img {
 
 .info-button-container {
   position: fixed;
-  bottom: 29%;
+  bottom: 27%;
   right: 50%;
   transform: translateX(50%);
   width: 20%;

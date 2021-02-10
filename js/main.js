@@ -27,14 +27,14 @@ const app = new Vue({
                             <div>150-200 метров</div>
                           </div>
                         </fieldset> `,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           Найдите неверный ответ. Давление на платформу пусковой  установки 
                           комплекса «Тополь - М» можно уменьшить следующими способами:
                         </div>
                         <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BF%D0%BE%D0%BB%D1%8C-%D0%9C" target="_blank">
-                            <img src="img/sv-01.png">
+                            <img src="img/sv-01.jpg">
                           </a>
                         </div>
                         
@@ -113,7 +113,7 @@ const app = new Vue({
                               ракетой мобильного и шахтного базирования с разделяющейся головной частью.
                             </div>
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           В каком случае давление, производимое кирпичом  на стол, будет наименьшим?                          
                         </div>
@@ -260,7 +260,7 @@ const app = new Vue({
                               бой.
                             </div>
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           В каком случае силы, действующие на опору со стороны кирпича максимальны?                         
                         </div> 
@@ -346,7 +346,7 @@ const app = new Vue({
                           войсками, захвату и уничтожению наземных элементов, а также по прикрытию (обороне).
                         </div>
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           В каком случае давление, производимое на стол будет наименьшим?
                         </div>   
@@ -512,7 +512,7 @@ const app = new Vue({
                             «Т-90» с максимальной дальностью стрельбы до 80 км, максимальным возимым боезапасом до 
                             70 выстрелов и скорострельностью до 16 выстрелов в минуту.
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           В каком случае совершается механическая работа?
                         </div>
@@ -587,7 +587,7 @@ const app = new Vue({
               id: 8,
               info: false,
               infoText: '',
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           Снайпер стреляет  по свободно падающему с дерева яблоку, находящемуся на расстоянии 
                           50м из высокоточной снайперской  винтовки  ОРСИС Т-5000 (от рус. оружейные системы; 
@@ -673,7 +673,7 @@ const app = new Vue({
                             спецподразделений органов безопасности с 1943 года по настоящее время. Сбалансированный 
                             нож - нож, в котором центр тяжести совпадает с геометрическим центром.
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           Чтобы найти опытным путем центр тяжести плоского тела сложной формы, необходимо
                         </div>
@@ -760,7 +760,7 @@ const app = new Vue({
                             силы в оборонительном бою. Радиус разлёта осколков (до 150 метров) метать её можно 
                             только из-за укрытия, из бронетранспортёра или из танка.  На вооружение с  1940г.
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           Под каким углом нужно бросить ручную противопехотную гранату Ф-1 для наибольшей 
                           дальности полета. 
@@ -848,7 +848,7 @@ const app = new Vue({
               id: 1,
               info: false,
               infoText: '',
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">Если в 12 часов ночи идет дождь, то есть ли вероятность, 
                         что через 72 часа будет солнечная погода?</div>
                         <div class="question-container__image""><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B5#:~:text=%C2%AB%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B5%C2%BB%20%E2%80%94%20%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%20%D0%B2%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D1%87%D0%B0%D1%81%D0%BE%D0%B2,%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D0%BC%20%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D0%B5%20%D1%81%201965%20%D0%B3%D0%BE%D0%B4%D0%B0." target="_blank"><img src="img/vks-01.jpg"></a></div> 
@@ -1051,9 +1051,9 @@ const app = new Vue({
               id: 4,
               info: false,
               infoText: '',
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">В каком случае сила Архимеда, действующая на Су-57 - 
-                        российский многофункциональный истребитель пятого поколения, созданный ОКБ имени П. О. 
+                        российский многофункциональный истребитель пятого поколения, созданный ОКБ имени П. О. 
                         Сухого, будет больше: у поверхности земли или на высоте 10 км?</div>
                         <div class="question-container__image">
                         <a href="https://ru.wikipedia.org/wiki/%D0%A1%D1%83-57" target="_blank">
@@ -1219,7 +1219,7 @@ const app = new Vue({
                           ВД-28 (стоит на МИГ-29), Буквы названиях означают «высотомер двухстрелочный», а  28 - 
                           это максимальная высота измерения 28 км.
                         </fieldset>`,
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">Каким физическим прибором измеряется атмосферное 
                         давление? На  принципе работы данного прибора был создан высотомер для самолетов.</div>
                         <div class="question-container__image">
@@ -2018,10 +2018,10 @@ const app = new Vue({
               id: 5,
               info: false,
               infoText: '',
-              text: `<div class="question-container">
+              text: `<div class="question-container g-t-c-55-45">
                         <div class="question-container__text">
                           Четыре российских подводных лодки  изготовленные из одинакового материала, 
-                          полностью опускаются на дно Белого моря (340 м. На какую из них действует 
+                          полностью опускаются на дно Белого моря (340 м.) На какую из них действует 
                           наименьшая сила Архимеда?
                         </div>
                         <div class="question-container__image">
@@ -2450,7 +2450,7 @@ const app = new Vue({
               text: `<div class="question-container">
                         <div class="question-container__text">
                           При создании тяжёлого ракетного подводного крейсера стратегического назначения 
-                          проекта 941 «Акула» , были изготовлены три модели одинакового объем. Их полностью 
+                          проекта 941 «Акула» , были изготовлены три модели одинакового объема. Их полностью 
                           погружают  в морскую воду. Первая модель стальная, вторая - алюминиевая, третья - 
                           деревянная. На какую из моделей действует большая Архимедова сила?
                         </div>

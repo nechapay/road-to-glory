@@ -27,7 +27,7 @@
       <!--      <div class="start-page__side start-page__side&#45;&#45;right" :class="classes.right"></div>-->
       <transition name="fade">
         <div class="start-page__controls" :class="classes.startControls" v-if="isUsernameControlsVisible">
-          <label class="username__label" for="username">Приветсвтую! Назови себя!</label>
+          <label class="username__label" for="username">Здравия желаю, введите свою фамилию, имя и отчество</label>
           <input id="username" class="input username" type="text" v-model="username" @keypress="handleStartKeyPressed">
           <a class="button start-button" @click="startClick">начать</a>
         </div>
@@ -36,7 +36,7 @@
         <div class="level-select-container fill" :class="classes.levelControls"
              v-if="isLevelSelectControlsVisible">
           <div class="level-select">
-            <div class="level-select__caption">{{ username }}, выбери свой путь!</div>
+            <div class="level-select__caption">{{ username }}, выберите свой путь!</div>
             <div class="level-select__buttons-container">
               <a class="button level-select__button" v-for="item in types" @click="handleClickLevelSelect(item)"
                  :key="item.id" :class="item.style">{{ item.name }}</a>
