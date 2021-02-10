@@ -1,7 +1,3 @@
-window.addEventListener("load", function () {
-  // console.log('successful launch')
-  // app.stat()
-})
 const app = new Vue({
   el: '#app',
   data() {
@@ -50,7 +46,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -59,7 +56,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -68,7 +66,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -77,7 +76,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -128,7 +128,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -137,7 +138,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -146,7 +148,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -190,7 +193,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -199,7 +203,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -208,7 +213,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -217,7 +223,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -268,7 +275,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -277,7 +285,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -286,7 +295,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -295,7 +305,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -350,7 +361,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -359,7 +371,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -368,7 +381,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -377,7 +391,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -386,7 +401,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -434,7 +450,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -443,7 +460,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -452,7 +470,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -461,7 +480,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -508,7 +528,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -517,7 +538,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -526,7 +548,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -535,7 +558,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -583,7 +607,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -592,7 +617,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -601,7 +627,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -610,7 +637,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -662,7 +690,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -671,7 +700,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -680,7 +710,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -689,7 +720,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -746,7 +778,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -755,7 +788,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -764,7 +798,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 },
                 {
@@ -773,7 +808,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    sv: true
                   }
                 }
               ],
@@ -824,7 +860,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -833,7 +870,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -868,7 +906,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -877,7 +916,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -886,7 +926,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -895,7 +936,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -942,7 +984,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -951,7 +994,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -960,7 +1004,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -969,7 +1014,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1020,7 +1066,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1029,7 +1076,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1038,7 +1086,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1047,7 +1096,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1090,7 +1140,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1099,7 +1150,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1108,7 +1160,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1117,7 +1170,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1181,7 +1235,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1190,7 +1245,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1199,7 +1255,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1208,7 +1265,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1263,7 +1321,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1272,7 +1331,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1281,7 +1341,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1334,7 +1395,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1343,7 +1405,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1352,7 +1415,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1361,7 +1425,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1414,7 +1479,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1423,7 +1489,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1432,7 +1499,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1441,7 +1509,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1495,7 +1564,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1504,7 +1574,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1513,7 +1584,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 },
                 {
@@ -1522,7 +1594,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    af: true
                   }
                 }
               ],
@@ -1609,7 +1682,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1618,7 +1692,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1627,7 +1702,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1636,7 +1712,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -1681,7 +1758,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1690,7 +1768,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1699,7 +1778,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1708,7 +1788,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -1722,6 +1803,11 @@ const app = new Vue({
                               Установка №2 показывает зависимость давления твердых тел от силы и площади опоры.<br>
                               Установка №4 показывает поверхностное натяжение жидкости.                              
                             </div>
+                            <div class="comment-container__image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" target="_blank">
+                                <img src="img/vks-05-1.jpg">
+                              </a>
+                            </div>
                           </div>`,
                 incorrect: `<div class="comment-container">
                               <div class="comment-container__text">
@@ -1732,6 +1818,11 @@ const app = new Vue({
                                 Установка №2 показывает зависимость давления твердых тел от силы и площади опоры.<br>
                                 Установка №4 показывает поверхностное натяжение жидкости. 
                               </div>
+                              <div class="comment-container__image">
+                                <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%BA%D0%BE%D0%BD_%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8F" target="_blank">
+                                  <img src="img/vks-05-1.jpg">
+                                </a>
+                              </div>
                             </div>`
               }
             },
@@ -1741,22 +1832,26 @@ const app = new Vue({
               info: true,
               infoText: `<fieldset class="question-container__info">
                           <legend>Справка</legend>
+                          <div class="question-container__info--image">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%A1-12#:~:text=%D0%90%D0%A1%2D12%20(%D0%BF%D0%BE%20%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%BC%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC,%D0%BD%D0%B0%20%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D1%83%20%D0%B4%D0%BE%206000%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20(" target="_blank">
+                              <img src="img/vmf-03-2.jpg">
+                            </a>
+                          </div>
+                          <div class="question-container__info--text">
                             АС-12, известная также как «Лошарик» - российская сверхсекретная глубоководная атомная 
                             подводная лодка , не несущая вооружения и способная погружаться, по некоторым данным, 
                             на глубину до 6000 метров (практически было продемонстрировано погружение аппарата на 
                             глубину до 3000 метров).
+                          </div>
                         </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В два сосуда, показанные на рисунке, налили по 1 л воды. В каком из 
                           них резиновое дно прогнется больше?
-                          <div class="question-container__image">
-                            <img src="img/vmf-03-1.jpg">
-                          </div>
                         </div>
                         <div class="question-container__image">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%A1-12#:~:text=%D0%90%D0%A1%2D12%20(%D0%BF%D0%BE%20%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%BC%20%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC,%D0%BD%D0%B0%20%D0%B3%D0%BB%D1%83%D0%B1%D0%B8%D0%BD%D1%83%20%D0%B4%D0%BE%206000%20%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2%20(" target="_blank">
-                        <img src="img/vmf-03-2.jpg"></a></div>
+                          <img src="img/vmf-03-1.jpg">
+                        </div>
                      </div>`,
               answers: [
                 {
@@ -1765,7 +1860,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1774,7 +1870,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1783,7 +1880,28 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
+                  }
+                },
+                {
+                  id: 4,
+                  text: `Сначала больше прогнется №1, а через минуту №2`,
+                  correct: false,
+                  style: {
+                    correct: false,
+                    incorrect: false,
+                    navy: true
+                  }
+                },
+                {
+                  id: 5,
+                  text: `Сначала больше прогнется №2, а через минуту №1`,
+                  correct: false,
+                  style: {
+                    correct: false,
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -1810,22 +1928,24 @@ const app = new Vue({
             // ВМФ 4
             {
               id: 4,
-              info: false,
-              infoText: '',
+              info: true,
+              infoText: `<fieldset class="question-container__info flex-wrapper--col">
+                          <legend>Справка</legend>
+                            <div class="question-container__info--image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%9A-329_%C2%AB%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%C2%BB" target="_blank">
+                                <img src="img/vmf-04-2.jpg">
+                              </a>
+                            </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           К-329 «Белгород» - российская атомная подводная лодка (АПЛ), единственный представитель 
                           проекта 09852, носитель беспилотных подводных аппаратов типа «Посейдон». Подводная лодка 
                           (условно брусок) опускается  в Тихом океане (условно аквариум). В каком из положений 
                           действующая на него сила Архимеда будет наибольшей?
-                          <div class="question-container__image">
-                            <img src="img/vmf-04-1.jpg">
-                          </div>
                         </div>
                         <div class="question-container__image">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%9A-329_%C2%AB%D0%91%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%C2%BB" target="_blank">
-                            <img src="img/vmf-04-2.jpg">
-                          </a>
+                          <img src="img/vmf-04-1.jpg">
                         </div>
                      </div>`,
               answers: [
@@ -1835,7 +1955,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1844,7 +1965,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1853,7 +1975,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1862,7 +1985,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -1899,9 +2023,12 @@ const app = new Vue({
                           Четыре российских подводных лодки  изготовленные из одинакового материала, 
                           полностью опускаются на дно Белого моря (340 м. На какую из них действует 
                           наименьшая сила Архимеда?
+                        </div>
                         <div class="question-container__image">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%A1-411_%C2%AB%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%C2%BB" target="_blank">
-                        <img src="img/vmf-05.jpg"></a></div>
+                          <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%A1-411_%C2%AB%D0%9E%D1%80%D0%B5%D0%BD%D0%B1%D1%83%D1%80%D0%B3%C2%BB" target="_blank">
+                            <img src="img/vmf-05.jpg">
+                          </a>
+                        </div>
                      </div>`,
               answers: [
                 {
@@ -1910,7 +2037,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1919,7 +2047,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1928,7 +2057,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -1937,7 +2067,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -1970,22 +2101,26 @@ const app = new Vue({
               info: true,
               infoText: `<fieldset class="question-container__info">
                           <legend>Справка</legend>
-                            Сверхмалые подводные лодки проекта 908 «Тритон-2». Состояли на вооружении флота с 
-                            1975 года по 1990-е годы. Предназначены для патрулирования акватории портов и рейдов, 
-                            доставки и эвакуации водолазов-разведчиков, минирования причалов, кораблей противника, 
-                            исследования морского дна.
+                            <div class="question-container__info--image">
+                              <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_908_%C2%AB%D0%A2%D1%80%D0%B8%D1%82%D0%BE%D0%BD-2%C2%BB" target="_blank">
+                                <img src="img/vmf-06-2.jpg">
+                              </a>
+                            </div>
+                            <div class="question-container__info--text">
+                              Сверхмалые подводные лодки проекта 908 «Тритон-2». Состояли на вооружении флота с 
+                              1975 года по 1990-е годы. Предназначены для патрулирования акватории портов и рейдов, 
+                              доставки и эвакуации водолазов-разведчиков, минирования причалов, кораблей противника, 
+                              исследования морского дна.
+                            </div>
                         </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           В каких точках, обозначенных на рисунке, давления  жидкости на сверхмалую 
                           подводную лодку «Тритон -2» будут равными?
-                          <div class="question-container__image">
-                            <img src="img/vmf-06-1.jpg">
-                          </div>
                         </div>
                         <div class="question-container__image">
-                        <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_908_%C2%AB%D0%A2%D1%80%D0%B8%D1%82%D0%BE%D0%BD-2%C2%BB" target="_blank">
-                        <img src="img/vmf-06-2.jpg"></a></div>
+                            <img src="img/vmf-06-1.jpg">
+                        </div>
                      </div>`,
               answers: [
                 {
@@ -1994,7 +2129,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2003,7 +2139,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2012,7 +2149,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2021,7 +2159,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -2068,7 +2207,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2077,7 +2217,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2086,7 +2227,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2095,7 +2237,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -2127,21 +2270,24 @@ const app = new Vue({
             // ВМФ 8
             {
               id: 8,
-              info: false,
-              infoText: '',
+              info: true,
+              infoText: `<fieldset class="question-container__info flex-wrapper--col">
+                          <legend>Справка</legend>
+                          <div class="question-container__info--image">
+                            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_955_%C2%AB%D0%91%D0%BE%D1%80%D0%B5%D0%B9%C2%BB" target="_blank">
+                              <img src="img/vmf-08-2.jpg">
+                            </a>
+                          </div>
+                        </fieldset>`,
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Представим себе, что Вы командир стратегической атомной  подводной  
                           лодки проекта 955 «Борей» 4-го поколения, вооружённой 16 БРПЛ Р-30 «Булава».  
                           Перед Вами подлодка врага и у Вас осталась только одна торпеда. Вы с большой 
                           вероятностью (100%) попадаете во врага. Куда Вы выстрелите?
-                          <div class="question-container__image">
-                            <img src="img/vmf-08-1.jpg">
-                          </div>
                         </div>
                         <div class="question-container__image">
-                          <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%BB%D0%BE%D0%B4%D0%BA%D0%B8_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0_955_%C2%AB%D0%91%D0%BE%D1%80%D0%B5%D0%B9%C2%BB" target="_blank">
-                          <img src="img/vmf-08-2.jpg"></a>
+                          <img src="img/vmf-08-1.jpg">
                         </div>
                      </div>`,
               answers: [
@@ -2151,7 +2297,9 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true,
+                    navy: true
                   }
                 },
                 {
@@ -2160,7 +2308,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2169,7 +2318,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2178,7 +2328,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -2203,7 +2354,7 @@ const app = new Vue({
             {
               id: 9,
               info: true,
-              infoText: `<fieldset class="question-container__info">
+              infoText: `<fieldset class="question-container__info flex-wrapper--col">
                           <legend>Справка</legend>
                             Тяжёлый авианесущий крейсер проекта 1143.5 «Адмирал Флота 
                             Советского Союза Кузнецов». В 2017 году крейсер вернулся из похода в Сирию.
@@ -2235,7 +2386,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2244,7 +2396,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2253,7 +2406,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2262,7 +2416,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -2312,7 +2467,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2321,7 +2477,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2330,7 +2487,8 @@ const app = new Vue({
                   correct: false,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 },
                 {
@@ -2339,7 +2497,8 @@ const app = new Vue({
                   correct: true,
                   style: {
                     correct: false,
-                    incorrect: false
+                    incorrect: false,
+                    navy: true
                   }
                 }
               ],
@@ -2480,9 +2639,9 @@ const app = new Vue({
       header: '11111',
       chevron: '',
       types: [
-        {name: 'Сухопутные войска', id: 1, short: 'СВ'},
-        {name: 'Воздушно-космические силы', id: 2, short: 'ВКС'},
-        {name: 'Военно-морской флот', id: 3, short: 'ВМФ'}
+        {name: 'Сухопутные войска', id: 1, short: 'СВ', style: { sv: true }},
+        {name: 'Воздушно-космические силы', id: 2, short: 'ВКС', style: { af: true }},
+        {name: 'Военно-морской флот', id: 3, short: 'ВМФ', style: { navy: true }}
       ],
       level: 1,
       classes: {
@@ -2524,6 +2683,11 @@ const app = new Vue({
         },
         viewer: {
           slide: false
+        },
+        button: {
+          navy: false,
+          sv: false,
+          af: false
         }
       },
       started: false,
@@ -2626,7 +2790,7 @@ const app = new Vue({
         'ВМФ': [
           {
             name: 'Матрос',
-            img: 'img/svg/vks-0.svg'
+            img: 'img/svg/vmf-0.svg'
           },
           {
             name: 'Мл. лейтенант',
@@ -2692,6 +2856,17 @@ const app = new Vue({
       setTimeout(function () {
         that.strapVisible = true
       }, 10)
+    },
+    currentCategory: function (val, oldVal) {
+      if(val === 'СВ') {
+        this.classes.button.sv = true
+      }
+      if(val === 'ВКС') {
+        this.classes.button.af = true
+      }
+      if(val === 'ВМФ') {
+        this.classes.button.navy = true
+      }
     }
   },
   computed: {
@@ -2756,13 +2931,11 @@ const app = new Vue({
       for (let i = 0; i < this.questions.length; i++) {
         this.questions[i].task = _.cloneDeep(this.categories[cat].questions[i])
       }
-      console.table('1', this.questions)
     },
     handleStarClick(val) {
       if (!this.questions[this.index].prevent) {
         let item = this.questions[this.questions.findIndex(i => i.id === val)]
         this.loadQuestion(item)
-        console.log('2', item)
       }
     },
     loadQuestion(question) {
@@ -2778,7 +2951,17 @@ const app = new Vue({
           this.questions[this.index].completed = true
           this.points++
         }
+        let cat = this.currentCategory
         this.questions[this.index].task.answers.forEach(function (item) {
+          if(cat === 'СВ') {
+            item.style.sv = false
+          }
+          if(cat === 'ВКС') {
+            item.style.af = false
+          }
+          if(cat === 'ВМФ') {
+            item.style.navy = false
+          }
           if (item.correct) {
             item.style.correct = true
           } else {
@@ -2788,11 +2971,6 @@ const app = new Vue({
             item.style['selected'] = true
           }
         })
-
-        // let that = this
-        // setTimeout(function () {
-        //   that.classes.rotation.rotate = true
-        // }, 1000)
       }
       this.questions[this.index].prevent = true
     },
@@ -2824,7 +3002,25 @@ const app = new Vue({
       this.classes.viewer.slide = true
     },
     final() {
-      this.finalStage = `<div class="final-stage__header">Поздравляем с прохождением дороги славы!</div>`
+      let stars = ''
+      for(let i = 0; i < this.questions.length; i++) {
+        if (i < this.points) {
+          stars += '&#9733;'
+        } else {
+          stars += '&#9734;'
+        }
+      }
+      this.finalStage = `<div class="final-stage__header">${this.username},<br> поздравляем с прохождением дороги славы!</div>
+                          <div class="final-stage__stars">${stars}</div>
+                          <div class="final-stage__text">
+                            Вам присвоено звание ${this.shoulderStraps[this.currentCategory][this.points].name}
+                          </div>
+                          <div class="final-stage__straps">
+                            <img src="${this.shoulderStraps[this.currentCategory][this.points].img}" 
+                            class="final-stage__strap final-stage__strap--left">
+                            <img src="${this.shoulderStraps[this.currentCategory][this.points].img}" 
+                            class="final-stage__strap final-stage__strap--right">
+                          </div>`
       this.finalStageVisible = true
     }
   }
