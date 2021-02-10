@@ -229,7 +229,7 @@ img {
   height: 50%;
   transform-origin: right;
   transition: 1s;
-  background: transparent url(../img/bg3.jpg) no-repeat 0 98%;
+  background: transparent url(../img/bg3.jpg) no-repeat 0 -52.5vh;
   background-size: cover;
   background-clip: content-box;
 }
