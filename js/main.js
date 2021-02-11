@@ -1465,7 +1465,7 @@ const app = new Vue({
               text: `<div class="question-container">
                         <div class="question-container__text">
                           Представьте, что воздушный шар уносится непрерывным ветром на юг. Тогда в какую сторону 
-                          развиваются флаги на его гондоле?
+                          развеваются флаги на его гондоле?
                         </div>
                         <div class="question-container__image">
                           <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B7%D0%B4%D1%83%D1%88%D0%BD%D1%8B%D0%B9_%D1%88%D0%B0%D1%80" target="_blank">
@@ -2921,6 +2921,7 @@ const app = new Vue({
       setTimeout(function () {
         that.classes.startPage['hide'] = true
         that.strapVisible = true
+        stopAudio('audioBegin')
       }, 1000)
       if (val) {
         this.currentCategory = val.short
@@ -3022,6 +3023,31 @@ const app = new Vue({
                             class="final-stage__strap final-stage__strap--right">
                           </div>`
       this.finalStageVisible = true
+      playAudio('audioEnd')
+    },
+    handleInputClick() {
+      playAudio('audioBegin')
     }
   }
 })
+
+function playAudio(audio) {
+  if (audio) {
+    let a = document.getElementById(audio)
+
+    let onEnded = function (e) {
+
+    }
+
+    a.play()
+    a.addEventListener("ended", onEnded)
+  }
+}
+
+function stopAudio(audio) {
+  if (audio) {
+    let a = document.getElementById(audio)
+    a.pause()
+    a.currentTime = 0
+  }
+}
